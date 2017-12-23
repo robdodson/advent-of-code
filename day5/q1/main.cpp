@@ -41,7 +41,7 @@ int main() {
     exit(1);
   }
 
-  // Split each passphrase and push into the words collection
+  // Push each instruction into the maze
   vector<int> maze;
   string buffer;
   while (getline(fileStream, buffer)) {
