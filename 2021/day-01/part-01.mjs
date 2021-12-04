@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs';
 
-const input = readFileSync('./input.txt', 'utf8');
+const input = readFileSync(new URL('./input.txt', import.meta.url), 'utf8');
 const measurements = input.split('\n').map(Number);
 
 let total = 0;
